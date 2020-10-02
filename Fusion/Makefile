@@ -1,4 +1,4 @@
-TARGET := $(notdir $(PWD)).a
+TARGET := Fusion.a
 
 all: $(TARGET)
 
