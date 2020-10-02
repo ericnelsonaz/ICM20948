@@ -1,4 +1,4 @@
-TARGET := $(notdir $(PWD)).a
+TARGET := icm20948driver.a
 
 all: $(TARGET)
 
