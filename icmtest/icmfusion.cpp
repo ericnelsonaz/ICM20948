@@ -119,7 +119,7 @@ minZ: -16740 maxZ:  16380  dx:  -360  LSB/g: 16560.00000
         // Print Euler angles
         FusionEulerAngles eulerAngles = FusionQuaternionToEulerAngles(FusionAhrsGetQuaternion(&fusionAhrs));
         printf("Roll = %0.1f, Pitch = %0.1f, Yaw = %0.1f\r\n", eulerAngles.angle.roll, eulerAngles.angle.pitch, eulerAngles.angle.yaw);
-
+	fflush(stdout);
 		sleeptime = (samplePeriod-duration_cast<duration<float>>(high_resolution_clock::now()-sampleTime).count())*1000000;
 		usleep(sleeptime);
 	}
